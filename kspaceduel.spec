@@ -1,5 +1,5 @@
 Name:		kspaceduel
-Version:	4.10.2
+Version:	4.10.3
 Release:	1
 Epoch:		1
 Summary:	Two player game with shooting spaceships flying around a sun
@@ -35,6 +35,9 @@ opponent's spacecraft with bullets or mines.
 %makeinstall_std -C build
 
 %changelog
+* Tue May 07 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.3-1
+- New version 4.10.3
+
 * Wed Apr 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.2-1
 - New version 4.10.2
 
