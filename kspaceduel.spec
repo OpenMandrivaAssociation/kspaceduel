@@ -1,6 +1,6 @@
 Name:		kspaceduel
 Version:	4.14.3
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
