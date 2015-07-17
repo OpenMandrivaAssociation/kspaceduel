@@ -8,6 +8,8 @@ License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/kspaceduel/
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
+BuildRequires:	kdelibs-devel
+BuildRequires:	cmake(KDEGames)
 
 %description
 In KSpaceDuel each of two possible players control a satellite spaceship
