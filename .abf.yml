@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kspaceduel-15.08.0.tar.xz: c593512d359fe20c98d6e251c0bfd6227d9e2c39
+sources:
+  kspaceduel-15.08.1.tar.xz: 383923aafcc077006478d544db53a4459d14459e
