@@ -1,5 +1,5 @@
 Name:		kspaceduel
-Version:	15.08.3
+Version:	15.12.0
 Release:	1
 Epoch:		1
 Summary:	Two player game with shooting spaceships flying around a sun
