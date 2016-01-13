@@ -1,6 +1,6 @@
 Name:		kspaceduel
-Version:	15.12.0
-Release:	2
+Version:	15.12.1
+Release:	1
 Epoch:		1
 Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
