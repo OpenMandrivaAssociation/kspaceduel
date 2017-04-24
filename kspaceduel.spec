@@ -1,3 +1,4 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kspaceduel
 Version:	17.04.0
 Release:	1
@@ -6,7 +7,7 @@ Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/kspaceduel/
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires:	kdelibs-devel
 BuildRequires:	cmake(KDEGames)
