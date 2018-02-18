@@ -8,6 +8,17 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/kspaceduel/
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+BuildRequires:	pkgconfig(Qt5Widgets)
+BuildRequires:	pkgconfig(Qt5Svg)
+BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5DocTools)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5XmlGui)
 
 %description
 In KSpaceDuel each of two possible players control a satellite spaceship
