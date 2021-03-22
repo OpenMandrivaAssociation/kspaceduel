@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kspaceduel
-Version:	20.12.3
+Version:	21.03.80
 Release:	1
 Epoch:		1
 Summary:	Two player game with shooting spaceships flying around a sun
@@ -31,7 +31,6 @@ opponent's spacecraft with bullets or mines.
 %{_datadir}/kspaceduel
 %{_iconsdir}/hicolor/*/apps/kspaceduel.png
 %{_datadir}/config.kcfg/kspaceduel.kcfg
-%{_datadir}/kxmlgui5/kspaceduel/kspaceduelui.rc
 %{_datadir}/metainfo/org.kde.kspaceduel.appdata.xml
 
 #------------------------------------------------------------------------------
