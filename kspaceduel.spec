@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kspaceduel
 Version:	22.08.2
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
