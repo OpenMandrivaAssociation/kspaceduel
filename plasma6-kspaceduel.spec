@@ -5,10 +5,14 @@ Release:	2
 Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/kspaceduel/
-Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kspaceduel-%{version}.tar.xz
-BuildRequires:	pkgconfig(Qt6Widgets)
-BuildRequires:	pkgconfig(Qt6Svg)
+URL:		https://www.kde.org/applications/games/kspaceduel/
+Source0:	https://download.kde.org/%{stable}/release-service/%{version}/src/kspaceduel-%{version}.tar.xz
+BuildRequires:	cmake(Qt6Widgets)
+BuildRequires:	cmake(Qt6Svg)
+BuildRequires:  cmake(Qt6Qml)
+BuildRequires:  cmake(Qt6QmlCore)
+BuildRequires:  cmake(Qt6QmlNetwork)
+BuildRequires:  qt6-qtbase-theme-gtk3
 BuildRequires:	cmake(KDEGames6)
 BuildRequires:	cmake(KF6Config)
 BuildRequires:	cmake(KF6ConfigWidgets)
