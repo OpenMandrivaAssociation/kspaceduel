@@ -6,7 +6,7 @@ Epoch:		1
 Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/kspaceduel/
+URL:		https://www.kde.org/applications/games/kspaceduel/
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	pkgconfig(Qt5Widgets)
 BuildRequires:	pkgconfig(Qt5Svg)
