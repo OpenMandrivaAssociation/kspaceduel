@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kspaceduel
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
@@ -31,6 +31,11 @@ BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6XmlGui)
 
+%rename plasma6-kspaceduel
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 In KSpaceDuel each of two possible players control a satellite spaceship
 orbiting the sun. As the game progresses players have to eliminate the
@@ -43,18 +48,3 @@ opponent's spacecraft with bullets or mines.
 %{_iconsdir}/hicolor/*/apps/kspaceduel.png
 %{_datadir}/config.kcfg/kspaceduel.kcfg
 %{_datadir}/metainfo/org.kde.kspaceduel.appdata.xml
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kspaceduel-%{?git:%{gitbranchd}}%{!?git:%{version}}
-
-%build
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-%ninja
-
-%install
-%ninja_install -C build
-%find_lang %{name} --all-name --with-html
