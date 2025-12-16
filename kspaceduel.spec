@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kspaceduel
-Version:	25.08.3
+Version:	25.12.0
 Release:	%{?git:0.%{git}.}1
 Summary:	Two player game with shooting spaceships flying around a sun
 Group:		Graphical desktop/KDE
